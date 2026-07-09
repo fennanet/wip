@@ -13,7 +13,7 @@
 
 <main class="container">
     <h1>WIP WRITER</h1>
-    <p><i>your n#1 favorite screenwriting program</i></p>
+    <p><i><span id="shake">your</span> n#1 favorite screenwriting program</i></p>
     <div class="new_load">
         <button>new</button>
         <button>load</button>
@@ -31,7 +31,14 @@
 <style>
     h1 {
         margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
         padding-top: 5vh;
+    }
+
+    p {
+        margin-top: 2vh;
+        margin-bottom: 4vh;
     }
 
     :root {
@@ -98,6 +105,25 @@
         background-color: var(--text-color);
         color: var(--accent-color-dark);
     }
-    
 
+    
+    @keyframes tilt-shake{
+      0%{ transform: translateX(0) rotate(0deg); }
+      25%{ transform: translateX(-2px) rotate(-2deg); }
+      50%{ transform: translateX(2px) rotate(2deg); }
+      75%{ transform: translateX(-2px) rotate(-2deg); }
+      100%{ transform: translateX(0) rotate(0deg); }
+    }
+
+    #shake{
+      display: inline-block;
+    }
+    
+    #shake:hover {
+          animation: tilt-shake .30s infinite;
+          font-weight: bold;
+          font-size: large;
+    }
+
+    
 </style>
