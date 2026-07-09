@@ -12,7 +12,7 @@
 </script>
 
 <main class="container">
-    <h1>wip writer</h1>
+    <h1>WIP WRITER</h1>
     <p><i>your n#1 favorite screenwriting program</i></p>
     <div class="new_load">
         <button>new</button>
@@ -48,6 +48,7 @@
         text-align: center;
         background-color: var(--bg-color);
         color: var(--text-color);
+        font-family: Inter;
     }
 
     button {
@@ -63,6 +64,10 @@
         background-color: var(--accent-color-light);
     }
 
+    .recents {
+        padding: 0;
+    }
+
     .recents li {
         display: flex;
         justify-content: space-between;
@@ -74,15 +79,19 @@
 
     .recent {
         background-color: var(--accent-color-dark);
-        border-radius: 2vb;
+        border-radius: 1vb;
         width: 100vb;
         margin: auto;
-        padding: 1vb;
+        padding-block: 1vb;
+        padding-inline: 5vb;
         margin-top: 5vh;
+        border-style: dashed;
+        border-width: 0.5vb;
     }
 
     .recent button {
         background-color: var(--accent-color-light);
+        margin-right: 0;
     }
 
     .recent button:hover {
