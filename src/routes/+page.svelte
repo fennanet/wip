@@ -12,36 +12,83 @@
 </script>
 
 <main class="container">
-    <h1>crusty</h1>
+    <h1>wip writer</h1>
     <p><i>your n#1 favorite screenwriting program</i></p>
-
-    <button>new</button>
-    <button>load</button>
-    <p>recent screenplays:</p>
-    <ul class="recents">
-        <li>quan millz <button>load</button> </li>
-        <li>water and wine brite <button>load</button> </li>
-        <li>mom found pubes in my bed!!! <button>load</button> </li> 
-    </ul>
+    <div class="new_load">
+        <button>new</button>
+        <button>load</button>
+    </div>
+    <div class="recent">
+        <p>recent screenplays:</p>
+        <ul class="recents">
+            <li>This Hoe Got Roaches In Her Crib<button>load</button></li>
+            <li>This Hoe Eats Chitlins<button>load</button></li>
+            <li>Pregnant By My Gay Stepdaddy<button>load</button></li>
+        </ul>
+    </div>
 </main>
 
 <style>
-    main{
+    h1 {
+        margin-top: 0;
+        padding-top: 5vh;
+    }
+
+    :root {
+        --bg-color: #0c0c0c;
+        --accent-color-dark: #481e14;
+        --accent-color-light: #9b3922;
+        --text-color: #f2613f;
+    }
+
+    main {
         padding: 0;
         margin: 0;
         height: 100vh;
         text-align: center;
-        background-color: black;
-        color: white;
+        background-color: var(--bg-color);
+        color: var(--text-color);
     }
-    
-    .recents li{
+
+    button {
+        background-color: var(--accent-color-dark);
+        color: var(--text-color);
+        border: 0;
+        border-radius: 10%;
+        margin: 0.5vb;
+        margin-right: 2vb;
+    }
+
+    button:hover {
+        background-color: var(--accent-color-light);
+    }
+
+    .recents li {
         display: flex;
         justify-content: space-between;
     }
 
     .recents li button {
         text-align: right;
-        margin-right: 20vh;
     }
+
+    .recent {
+        background-color: var(--accent-color-dark);
+        border-radius: 2vb;
+        width: 100vb;
+        margin: auto;
+        padding: 1vb;
+        margin-top: 5vh;
+    }
+
+    .recent button {
+        background-color: var(--accent-color-light);
+    }
+
+    .recent button:hover {
+        background-color: var(--text-color);
+        color: var(--accent-color-dark);
+    }
+    
+
 </style>

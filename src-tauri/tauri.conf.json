@@ -12,9 +12,11 @@
   "app": {
     "windows": [
       {
-        "title": "crusty",
-        "width": 800,
-        "height": 600
+        "resizable": false,
+        "decorations": true,
+        "title": "WIP WRITER",
+        "width": 500,
+        "height": 400
       }
     ],
     "security": {
