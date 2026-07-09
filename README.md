@@ -1,7 +1,7 @@
-# Tauri + SvelteKit
+# WIP writer
+WIP writer is screenplay software written in Rust and Svelte, using the Tauri framework.
 
-This template should help get you started developing with Tauri and SvelteKit in Vite.
+## WHY ?
+There isn't much of a big OSS scene when it comes to screenplay software, which is quite sad as it's pretty much essential for people trying to just write a script and not pay 300$ for software you can only use on MacOS and Windows.
 
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+Trelby is another open-source one I could find, but it seems to be a bit dated.
