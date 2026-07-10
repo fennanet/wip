@@ -1,13 +1,14 @@
 <script>
     import { invoke } from "@tauri-apps/api/core";
 
-    let name = $state("");
-    let greetMsg = $state("");
-
-    async function greet(event) {
-        event.preventDefault();
-        // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-        greetMsg = await invoke("greet", { name });
+    let opening = false;
+    
+    function open_new() {
+      if (opening) return;
+      opening = true;
+      invoke("new_window")
+        .catch((err) => console.error("Failed to open new project:", err))
+        .finally(() => { opening = false; });
     }
 </script>
 
@@ -15,7 +16,7 @@
     <h1>WIP WRITER</h1>
     <p><i><span id="shake">your</span> n#1 favorite screenwriting program</i></p>
     <div class="new_load">
-        <button>new</button>
+        <button onclick={open_new}>new</button>
         <button>load</button>
     </div>
     <div class="recent">
