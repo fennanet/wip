@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 5vh;
+}
+
+p {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+:root {
+    --bg-color: #0c0c0c;
+    --accent-color-dark: #481e14;
+    --accent-color-light: #9b3922;
+    --text-color: #f2613f;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Inter;
+}
+
+button {
+    background-color: var(--accent-color-dark);
+    color: var(--text-color);
+    border: 0;
+    border-radius: 10%;
+    margin: 0.5vb;
+    margin-right: 2vb;
+}
+
+button:hover {
+    background-color: var(--accent-color-light);
+}
+
+.recents {
+    padding: 0;
+}
+
+.recents li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recents li button {
+    text-align: right;
+}
+
+.recent {
+    background-color: var(--accent-color-dark);
+    border-radius: 1vb;
+    width: 100vb;
+    margin: auto;
+    padding-block: 1vb;
+    padding-inline: 5vb;
+    margin-top: 5vh;
+    border-style: dashed;
+    border-width: 0.5vb;
+}
+
+.recent button {
+    background-color: var(--accent-color-light);
+    margin-right: 0;
+}
+
+.recent button:hover {
+    background-color: var(--text-color);
+    color: var(--accent-color-dark);
+}
+
+
+@keyframes tilt-shake{
+  0%{ transform: translateX(0) rotate(0deg); }
+  25%{ transform: translateX(-2px) rotate(-2deg); }
+  50%{ transform: translateX(2px) rotate(2deg); }
+  75%{ transform: translateX(-2px) rotate(-2deg); }
+  100%{ transform: translateX(0) rotate(0deg); }
+}
+
+#shake{
+  display: inline-block;
+}
+
+#shake:hover {
+      animation: tilt-shake .30s infinite;
+      font-weight: bold;
+      font-size: large;
+}
