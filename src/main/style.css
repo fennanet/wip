@@ -1,0 +1,43 @@
+:root {
+  --bg: #fbf1c7;
+  --surface: #ebdbb2;
+  --text: #3c3836;
+  --text-dim: #665c54;
+  --border: #d5c4a1;
+  --accent: #458588;
+  --accent-hover: #8ec07c;
+  --success: #98971a;
+  --warning: #d79921;
+  --error: #cc241d;
+}
+
+body.dark-mode {
+  --bg: #282828;
+  --surface: #3c3836;
+  --text: #ebdbb2;
+  --text-dim: #a89984;
+  --border: #504945;
+  --accent: #83a598;
+  --accent-hover: #b8bb26;
+  --success: #98971a;
+  --warning: #fabd2f;
+  --error: #fb4934;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Liberation Sans', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#editor {
+    margin: 5vb;
+    background-color: var(--bg);
+    box-shadow: 0 0 10px 5px var(--border);
+    color: var(--text);
+}
+
+#editor > div.ql-editor.ql-blank::before {
+    color: var(--text-dim);
+}
