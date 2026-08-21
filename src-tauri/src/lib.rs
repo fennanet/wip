@@ -9,8 +9,8 @@ use tauri::{AppHandle, WebviewWindowBuilder, WebviewUrl};
 
 #[tauri::command]
 fn new_window(app: AppHandle) -> Result<(), String> {
-    WebviewWindowBuilder::new(&app, "window-1", WebviewUrl::App("/main/index.html".into()))
-        .title("WIP WRITER")
+    WebviewWindowBuilder::new(&app, "window-1", WebviewUrl::App("main/index.html".into()))
+        .title("wip writer")
         .build()
         .map_err(|e| e.to_string())?;
     Ok(())

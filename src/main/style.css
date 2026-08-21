@@ -31,8 +31,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#editor {
-    margin: 5vb;
+#editor, #toolbar {
     background-color: var(--bg);
     box-shadow: 0 0 10px 5px var(--border);
     color: var(--text);
@@ -41,3 +40,13 @@ body {
 #editor > div.ql-editor.ql-blank::before {
     color: var(--text-dim);
 }
+
+#toolbar {
+    margin-bottom: 1vh;
+}
+
+#workspace {
+    margin: 5vb;
+}
+
+
