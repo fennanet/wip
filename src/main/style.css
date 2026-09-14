@@ -49,4 +49,19 @@ body {
     margin: 5vb;
 }
 
+#modes {
+    display: inline-flex;
+    margin: auto;
+}
+
+#modes button {
+    background-color: transparent;
+    border: 0;
+    color: var(--text);
+}
+
+#modes .btn-active {
+    text-decoration: underline dotted 2px;
+}
+
 

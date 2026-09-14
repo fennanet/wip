@@ -28,3 +28,12 @@ function switch_color() {
 
 toggleButton.addEventListener('click', switch_color);
 
+document.getElementById('action')?.addEventListener('click', setMode('action'))
+
+
+function setMode(mode) {
+  console.log('lkj');
+  console.log(mode);
+}
+  
+
